@@ -12,6 +12,6 @@ Scope (node finder)</h1>
 
 ![imagen](https://github.com/user-attachments/assets/fb815e52-f58e-4d39-a602-5326a22c4868)
 
-<h4>This plugin was created together with Juan FDS and was recorded for the <a href="https://www.instagram.com/godotmeetuparg/">Godot Meetup Argentina community</a> .</h4>
+<h4>This plugin was created together with <a href="https://github.com/JuanFdS">Juan FDS</a> and was recorded for the <a href="https://www.instagram.com/godotmeetuparg/">Godot Meetup Argentina community</a> .</h4>
 
 <p>Icon designed by DELAPOUITE from <a href="https://delapouite.com/">Website</a>, licensed under Creative Commons Attribution 3.0.</p>
