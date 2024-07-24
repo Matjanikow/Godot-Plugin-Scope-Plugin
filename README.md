@@ -1,4 +1,6 @@
-<h1>Scope (node finder)</h1>
+<h1><img src="https://github.com/Matjanikow/scope-node-plugin/blob/master/addons/scope/crosshair.svg" alt="Plugin Icon" style="width:100px;height:100px;">
+Scope (node finder)</h1>
+
 <p>This plugin aims to address a missing feature in the Godot IDE, the "SCOPE," which finds the selected node and brings it into focus.</p>
 <p>The inspiration is based on the classic scope feature of the IntelliJ IDE.</p>
 
