@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhfxix5wyx521"]
+
+[ext_resource type="Texture2D" uid="uid://bxky60ol5p4jc" path="res://addons/scope/crosshair.svg" id="1_eo518"]
+[ext_resource type="Script" path="res://addons/scope/scopeButton.gd" id="1_r1f4s"]
+
+[node name="ScopeButton" type="TextureButton"]
+texture_filter = 1
+custom_minimum_size = Vector2(24, 24)
+anchors_preset = -1
+anchor_right = 0.0555556
+anchor_bottom = 0.0987654
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_eo518")
+texture_pressed = ExtResource("1_eo518")
+texture_hover = ExtResource("1_eo518")
+texture_disabled = ExtResource("1_eo518")
+texture_focused = ExtResource("1_eo518")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("1_r1f4s")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="." to="." method="_on_scope_button_pressed"]
