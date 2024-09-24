@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="Scope-plugin"
-config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.svg"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+config/icon="res://addons/scope/crosshair.svg"
+config/tags=PackedStringArray("matata")
 
 [autoload]
 

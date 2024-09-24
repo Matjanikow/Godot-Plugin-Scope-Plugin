@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsj828xm2e28w"]
+
+[ext_resource type="Script" path="res://addons/touchscreenbuttoncontrol/TouchScreenButtonControl.gd" id="1_5k641"]
+
+[node name="TouchScreenButtonControl" type="TextureButton"]
+script = ExtResource("1_5k641")
