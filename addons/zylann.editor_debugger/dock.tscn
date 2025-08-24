@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d0sxhc6l66egc"]
 
-[ext_resource type="Script" path="res://addons/zylann.editor_debugger/dock.gd" id="1"]
+[ext_resource type="Script" uid="uid://bajnjv277q4nd" path="res://addons/zylann.editor_debugger/dock.gd" id="1"]
 
 [node name="EditorDebugger" type="Control"]
 layout_mode = 3

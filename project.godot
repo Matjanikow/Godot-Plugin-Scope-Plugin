@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="Scope-plugin"
-config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://addons/scope/crosshair.svg"
 config/tags=PackedStringArray("matata")
+run/main_scene="uid://bg6gh068t00ki"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+config/icon="res://addons/scope/crosshair.svg"
 
 [autoload]
 
@@ -21,7 +22,7 @@ RuakeLayer="*res://addons/ruake/core/RuakeLayer.tscn"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/ruake/plugin.cfg", "res://addons/scope/plugin.cfg", "res://addons/touchscreenbuttoncontrol/plugin.cfg")
+enabled=PackedStringArray("res://addons/ruake/plugin.cfg", "res://addons/scope/plugin.cfg")
 
 [rendering]
 

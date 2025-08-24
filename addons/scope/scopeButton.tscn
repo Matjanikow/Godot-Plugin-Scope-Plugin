@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dhfxix5wyx521"]
 
 [ext_resource type="Texture2D" uid="uid://bxky60ol5p4jc" path="res://addons/scope/crosshair.svg" id="1_eo518"]
-[ext_resource type="Script" path="res://addons/scope/scopeButton.gd" id="1_r1f4s"]
+[ext_resource type="Script" uid="uid://3f8pt1kqu025" path="res://addons/scope/scopeButton.gd" id="1_r1f4s"]
 
 [node name="ScopeButton" type="TextureButton"]
 texture_filter = 1

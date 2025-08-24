@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://din1aj8sfxhlk"]
 
-[ext_resource type="Script" path="res://addons/ruake/core/REPL/InEditorREPL.gd" id="1_vxaw6"]
+[ext_resource type="Script" uid="uid://w2kaovd608jp" path="res://addons/ruake/core/REPL/InEditorREPL.gd" id="1_vxaw6"]
 [ext_resource type="PackedScene" uid="uid://cusxs75017g44" path="res://addons/ruake/core/REPL/REPL.tscn" id="2_1f052"]
-[ext_resource type="Script" path="res://addons/ruake/core/EditorEyeDropper.gd" id="2_ubjgs"]
+[ext_resource type="Script" uid="uid://dsgifomohwa7d" path="res://addons/ruake/core/EditorEyeDropper.gd" id="2_ubjgs"]
 [ext_resource type="Texture2D" uid="uid://2lgtp7y73mpm" path="res://addons/ruake/core/REPL/ColorPicker.svg" id="4_jt8xp"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_3o8jm"]
