@@ -20,6 +20,5 @@ func _enter_tree():
 	menuPanel.move_child(scope, menuPanel.get_child_count()-2)
 	
 func _exit_tree():
-	#menuPanel.remove_child(scope)
-	remove_control_from_container(EditorPlugin.CONTAINER_PROJECT_SETTING_TAB_LEFT, scope)
+	menuPanel.remove_child(scope)
 	scope.queue_free()
