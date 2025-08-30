@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dhfxix5wyx521"]
+[gd_scene load_steps=4 format=3 uid="uid://do11th6mej4iy"]
 
-[ext_resource type="Texture2D" uid="uid://bidk3f4460a2o" path="res://addons/scope/crosshairLightMode.svg" id="1_ak3b3"]
+[ext_resource type="Texture2D" uid="uid://bidk3f4460a2o" path="res://addons/scope/crosshairLightMode.svg" id="1_i54ho"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ykhxj"]
 load_path = "res://.godot/imported/crosshair.svg-3d9e1fa3acf1a4efed55310fbcb18227.ctex"
@@ -45,11 +45,11 @@ anchor_right = 0.0555556
 anchor_bottom = 0.0987654
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = SubResource("CompressedTexture2D_ykhxj")
-texture_pressed = ExtResource("1_ak3b3")
-texture_hover = SubResource("CompressedTexture2D_ykhxj")
-texture_disabled = ExtResource("1_ak3b3")
-texture_focused = SubResource("CompressedTexture2D_ykhxj")
+texture_normal = ExtResource("1_i54ho")
+texture_pressed = SubResource("CompressedTexture2D_ykhxj")
+texture_hover = ExtResource("1_i54ho")
+texture_disabled = SubResource("CompressedTexture2D_ykhxj")
+texture_focused = ExtResource("1_i54ho")
 ignore_texture_size = true
 stretch_mode = 4
 script = SubResource("GDScript_ak3b3")
