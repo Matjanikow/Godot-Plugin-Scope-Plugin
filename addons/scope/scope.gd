@@ -1,11 +1,16 @@
 @tool
 extends EditorPlugin
-const SCOPE = preload("res://addons/scope/scopeButton.tscn")
+var editorSettings = get_editor_interface().get_editor_settings()
+var baseColor = editorSettings.get_setting("interface/theme/base_color")
+var baseColorLuminance = baseColor.srgb_to_linear().get_luminance()
+var lightMode = baseColorLuminance > 0.5
+var scopePath = "res://addons/scope/scopeButtonLightMode.tscn" if lightMode else "res://addons/scope/scopeButton.tscn"
+var SCOPE = load(scopePath)
+
 #var dock = "@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/
 #DockVSplitLeftR/DockSlotLeftUR/Scene/@HBoxContainer@5046"
 var scope : Control
 var menuPanel : Node
-var scene_dock : Control
 
 func _enter_tree():
 	scope = SCOPE.instantiate()
@@ -16,6 +21,7 @@ func _enter_tree():
 			sceneParent = c
 			break
 	menuPanel = sceneParent.find_child("@HBox*", false, false)
+	
 	menuPanel.add_child(scope)
 	menuPanel.move_child(scope, menuPanel.get_child_count()-2)
 	
