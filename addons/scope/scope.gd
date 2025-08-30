@@ -13,9 +13,6 @@ var scope : Control
 var menuPanel : Node
 
 func _enter_tree():
-	print(baseColorLuminance)
-	print(scopePath)
-	print(lightMode)
 	scope = SCOPE.instantiate()
 	#var sceneParent = get_tree().root.find_child("Scene", true, false)
 	var sceneParent = null

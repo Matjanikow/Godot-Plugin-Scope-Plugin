@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bidk3f4460a2o"
-path="res://.godot/imported/crosshairLightMode.svg-bf77703c8b1303013ce02db373256313.ctex"
+path="res://.godot/imported/crosshairDisabled.svg-c65196fb06d7d626eb2480739e745fd7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/scope/crosshairLightMode.svg"
-dest_files=["res://.godot/imported/crosshairLightMode.svg-bf77703c8b1303013ce02db373256313.ctex"]
+source_file="res://addons/scope/crosshairDisabled.svg"
+dest_files=["res://.godot/imported/crosshairDisabled.svg-c65196fb06d7d626eb2480739e745fd7.ctex"]
 
 [params]
 
