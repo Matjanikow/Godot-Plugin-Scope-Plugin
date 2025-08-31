@@ -8,7 +8,13 @@ var menuPanel : Node
 
 func _enter_tree():
 	_set_scope()
+	_add_scope()
 	get_tree().root.theme_changed.connect(_theme_changed)
+	
+func _theme_changed():
+	_delete_scope()
+	_set_scope()
+	_add_scope()
 
 func _set_scope():
 	var editorSettings = get_editor_interface().get_editor_settings()
@@ -18,7 +24,6 @@ func _set_scope():
 	var scopePath = "res://addons/scope/scopeButtonLightMode.tscn" if lightMode else "res://addons/scope/scopeButton.tscn"
 	var SCOPE = load(scopePath)
 	scope = SCOPE.instantiate()
-	_add_scope()
 	
 func _add_scope():
 	var sceneParent = null
@@ -29,10 +34,6 @@ func _add_scope():
 	menuPanel = sceneParent.find_child("@HBox*", false, false)
 	menuPanel.add_child(scope)
 	menuPanel.move_child(scope, menuPanel.get_child_count()-2)
-
-func _theme_changed():
-	_delete_scope()
-	_set_scope()
 
 func _delete_scope():
 	menuPanel.remove_child(scope)
