@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dhfxix5wyx521"]
 
-[ext_resource type="Texture2D" uid="uid://bidk3f4460a2o" path="res://addons/scope/crosshairDisabled.svg" id="1_ak3b3"]
-[ext_resource type="Texture2D" uid="uid://bxky60ol5p4jc" path="res://addons/scope/crosshair.svg" id="1_udyj4"]
+[ext_resource type="Texture2D" uid="uid://bixksfn4hjcp3" path="res://addons/scope/crosshairDisabled.svg" id="1_ak3b3"]
+[ext_resource type="Texture2D" uid="uid://ckt2bhki3huf7" path="res://addons/scope/crosshair.svg" id="1_udyj4"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ykhxj"]
 load_path = "res://.godot/imported/crosshair.svg-3d9e1fa3acf1a4efed55310fbcb18227.ctex"
@@ -40,7 +40,7 @@ func _on_scope_button_pressed():
 
 [node name="ScopeButton" type="TextureButton"]
 texture_filter = 1
-custom_minimum_size = Vector2(24, 24)
+custom_minimum_size = Vector2(26.5, 26.5)
 anchors_preset = -1
 anchor_right = 0.0555556
 anchor_bottom = 0.0987654

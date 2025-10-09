@@ -13,7 +13,7 @@ config_version=5
 config/name="Scope-plugin"
 config/tags=PackedStringArray("matata")
 run/main_scene="uid://bg6gh068t00ki"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://addons/scope/crosshair.svg"
 
 [editor_plugins]

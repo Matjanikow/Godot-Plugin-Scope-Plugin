@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://do11th6mej4iy"]
 
-[ext_resource type="Texture2D" uid="uid://bxky60ol5p4jc" path="res://addons/scope/crosshair.svg" id="1_dmnh0"]
-[ext_resource type="Texture2D" uid="uid://bidk3f4460a2o" path="res://addons/scope/crosshairDisabled.svg" id="1_i54ho"]
+[ext_resource type="Texture2D" uid="uid://ckt2bhki3huf7" path="res://addons/scope/crosshair.svg" id="1_dmnh0"]
+[ext_resource type="Texture2D" uid="uid://bixksfn4hjcp3" path="res://addons/scope/crosshairDisabled.svg" id="1_i54ho"]
 
 [sub_resource type="GDScript" id="GDScript_ak3b3"]
 script/source = "@tool
@@ -39,7 +39,7 @@ func _on_scope_button_pressed():
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)
 texture_filter = 1
-custom_minimum_size = Vector2(24, 24)
+custom_minimum_size = Vector2(26.5, 26.5)
 anchors_preset = -1
 anchor_right = 0.0555556
 anchor_bottom = 0.0987654
