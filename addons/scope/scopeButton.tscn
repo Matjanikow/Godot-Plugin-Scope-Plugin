@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dhfxix5wyx521"]
 
-[ext_resource type="Texture2D" uid="uid://bidk3f4460a2o" path="res://addons/scope/crosshairDisabled.svg" id="1_ak3b3"]
-[ext_resource type="Texture2D" uid="uid://bxky60ol5p4jc" path="res://addons/scope/crosshair.svg" id="1_udyj4"]
+[ext_resource type="Texture2D" uid="uid://du0jq511gs4r3" path="res://addons/scope/crosshairDisabled.svg" id="1_ak3b3"]
+[ext_resource type="Texture2D" uid="uid://q7nia7ixhr05" path="res://addons/scope/crosshair.svg" id="1_udyj4"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ykhxj"]
 load_path = "res://.godot/imported/crosshair.svg-3d9e1fa3acf1a4efed55310fbcb18227.ctex"
@@ -52,7 +52,7 @@ texture_hover = SubResource("CompressedTexture2D_ykhxj")
 texture_disabled = ExtResource("1_ak3b3")
 texture_focused = SubResource("CompressedTexture2D_ykhxj")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 5
 script = SubResource("GDScript_ak3b3")
 metadata/_edit_use_anchors_ = true
 
