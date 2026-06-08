@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dhfxix5wyx521"]
+[gd_scene format=3 uid="uid://dhfxix5wyx521"]
 
 [ext_resource type="Texture2D" uid="uid://du0jq511gs4r3" path="res://addons/scope/crosshairDisabled.svg" id="1_ak3b3"]
 [ext_resource type="Texture2D" uid="uid://q7nia7ixhr05" path="res://addons/scope/crosshair.svg" id="1_udyj4"]
@@ -13,11 +13,11 @@ extends Control
 func _on_scope_button_pressed():
 	var sceneParent = null
 	for c in get_tree().root.find_children(\"Scene\", \"\", true, false):
-		if c is VBoxContainer: 
+		if c is MarginContainer: 
 			sceneParent = c
 			break
-	var sceneEditor = sceneParent.find_child(\"*SceneTreeEditor*\", false, false)
-	var tree:Tree = sceneEditor.find_child(\"*Tree*\", false, false)
+	var sceneEditor = sceneParent.find_child(\"*SceneTreeEditor*\", true, false)
+	var tree:Tree = sceneEditor.find_child(\"*Tree*\", true, false)
 	if tree.get_selected() != null:
 		tree.scroll_to_item(tree.get_selected(), true)
 		
@@ -38,7 +38,7 @@ func _on_scope_button_pressed():
 	tree.queue_redraw()
 "
 
-[node name="ScopeButton" type="TextureButton"]
+[node name="ScopeButton" type="TextureButton" unique_id=1634531141]
 texture_filter = 1
 custom_minimum_size = Vector2(24, 24)
 anchors_preset = -1

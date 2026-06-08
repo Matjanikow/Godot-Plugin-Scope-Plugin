@@ -4,7 +4,7 @@ extends Control
 func _on_scope_button_pressed():
 	var sceneParent = null
 	for c in get_tree().root.find_children("Scene", "", true, false):
-		if c is VBoxContainer: 
+		if c is MarginContainer: 
 			sceneParent = c
 			break
 	var sceneEditor = sceneParent.find_child("*SceneTreeEditor*", false, false)

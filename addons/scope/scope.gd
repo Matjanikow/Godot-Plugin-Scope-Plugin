@@ -28,10 +28,10 @@ func _set_scope():
 func _add_scope():
 	var sceneParent = null
 	for c in get_tree().root.find_children("Scene", "", true, false):
-		if c is VBoxContainer: 
+		if c is MarginContainer: 
 			sceneParent = c
 			break
-	menuPanel = sceneParent.find_child("@HBox*", false, false)
+	menuPanel = sceneParent.find_child("@HBox*", true, false)
 	menuPanel.add_child(scope)
 	menuPanel.move_child(scope, menuPanel.get_child_count()-2)
 

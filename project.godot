@@ -8,17 +8,25 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Scope-plugin"
 config/tags=PackedStringArray("matata")
 run/main_scene="uid://bg6gh068t00ki"
-config/features=PackedStringArray("4.5", "GL Compatibility")
+config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://addons/scope/crosshair.svg"
+
+[autoload]
+
+RuakeLayer="*uid://dn8rjsyxnwqmi"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/scope/plugin.cfg")
+enabled=PackedStringArray("res://addons/ruake/plugin.cfg", "res://addons/scope/plugin.cfg")
 
 [rendering]
 

@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://do11th6mej4iy"]
+[gd_scene format=3 uid="uid://do11th6mej4iy"]
 
-[ext_resource type="Texture2D" uid="uid://ckt2bhki3huf7" path="res://addons/scope/crosshair.svg" id="1_dmnh0"]
-[ext_resource type="Texture2D" uid="uid://bixksfn4hjcp3" path="res://addons/scope/crosshairDisabled.svg" id="1_i54ho"]
+[ext_resource type="Texture2D" uid="uid://q7nia7ixhr05" path="res://addons/scope/crosshair.svg" id="1_dmnh0"]
+[ext_resource type="Texture2D" uid="uid://du0jq511gs4r3" path="res://addons/scope/crosshairDisabled.svg" id="1_i54ho"]
 
 [sub_resource type="GDScript" id="GDScript_ak3b3"]
 script/source = "@tool
@@ -13,6 +13,7 @@ func _on_scope_button_pressed():
 		if c is VBoxContainer: 
 			sceneParent = c
 			break
+	print(get_tree().root.find_child(\"*SceneTreeEditor*\", true, false).get_path())
 	var sceneEditor = sceneParent.find_child(\"*SceneTreeEditor*\", false, false)
 	var tree:Tree = sceneEditor.find_child(\"*Tree*\", false, false)
 	if tree.get_selected() != null:
@@ -35,7 +36,7 @@ func _on_scope_button_pressed():
 	tree.queue_redraw()
 "
 
-[node name="ScopeButton" type="TextureButton"]
+[node name="ScopeButton" type="TextureButton" unique_id=2089159398]
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)
 texture_filter = 1
